@@ -12,18 +12,12 @@ header {
     padding: 20px;
 }
 
-.logo h1 {
-    margin: 0;
-    font-size: 24px;
-    color: #333;
-}
-
 /* Estilizando a imagem do logo */
 .logo-img {
-    width: 150px; /* Ajuste o tamanho da imagem */
+    width: 100px; /* Ajuste o tamanho da imagem para ficar menor */
     height: auto;
     display: block;
-    margin: 10px auto; /* Centraliza a imagem */
+    margin: 20px auto; /* Espaço ao redor da imagem */
 }
 
 /* Navegação */
@@ -46,5 +40,5 @@ nav ul li a {
 
 /* Espaço extra entre a imagem e o menu */
 nav {
-    margin-top: 20px; /* Ajuste esse valor para mais ou menos espaço */
+    margin-top: 30px; /* Aumente esse valor para dar mais espaço entre a imagem e o menu */
 }
