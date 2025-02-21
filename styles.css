@@ -4,26 +4,34 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-image: url('fundo.jpg'); /* Adicionando papel de parede para o corpo da página */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
 }
 
 /* Cabeçalho */
 header {
-    background-color: #f4f4f4;
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo semi-transparente para legibilidade */
     padding: 20px;
+    margin-bottom: 20px;
+    background-image: url('fundo-cabecalho.jpg'); /* Imagem de fundo do cabeçalho */
+    background-size: cover; /* Faz a imagem cobrir todo o cabeçalho */
+    background-position: center; /* Centraliza a imagem */
 }
 
 /* Estilizando a imagem do logo */
 .logo-img {
-    width: 100px; /* Ajuste o tamanho da imagem para ficar menor */
+    width: 150px;
     height: auto;
     display: block;
-    margin: 20px auto; /* Espaço ao redor da imagem */
+    margin: 20px auto;
 }
 
 /* Navegação */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -38,7 +46,34 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Espaço extra entre a imagem e o menu */
 nav {
-    margin-top: 30px; /* Aumente esse valor para dar mais espaço entre a imagem e o menu */
+    margin-top: 30px;
+}
+
+/* Garantir que as seções tenham algum espaçamento */
+section {
+    padding: 30px 0;
+}
+
+/* Ajuste no título das seções */
+h2 {
+    margin-bottom: 15px;
+}
+
+/* Estilizando o formulário de contato */
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ajuste no footer */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #f4f4f4;
 }
