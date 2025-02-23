@@ -55,11 +55,11 @@
 
     /* Hero Section */
     .hero {
-        background-image: url('fundo.jpg');
+        background-image: url('fundo-cabecalho1.jpg');
         background-size: cover;
         background-position: center;
         color: white;
-        padding: 80px 20px;
+        padding: 160px 20px;
         text-align: center;
     }
 
@@ -74,17 +74,17 @@
     }
 
     .cta-button {
-        background-color: #f04e23;
-        color: white;
-        padding: 15px 30px;
-        font-size: 1.2em;
-        text-decoration: none;
-        border-radius: 5px;
-    }
+    background-color: #007bff; /* Azul */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
-    .cta-button:hover {
-        background-color: #d03e1a;
-    }
+.cta-button:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+}
 
     /* Seção de Serviços */
     #servicos {
@@ -227,6 +227,12 @@
         #precos table {
             font-size: 12px;
         }
+        .logo img {
+    width: 80px; /* Ajuste o tamanho conforme necessário */
+    height: 80px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    object-fit: cover; /* Garante que a imagem se encaixe corretamente */
+}
     }
 </style>
 </head>
@@ -236,7 +242,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>Assistência Técnica do Kevin</h1>
+    <img src="logo.png" alt="Logo Assistência Técnica do Kevin">
             </div>
             <nav>
                 <ul>
