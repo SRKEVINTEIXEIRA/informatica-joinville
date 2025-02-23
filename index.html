@@ -131,56 +131,56 @@
             }
             
             .servico-lista {
-            display: flex;
-            flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
-            justify-content: space-between;
-            gap: 20px; /* Espaçamento mínimo entre os itens */
-            }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
 
-            .servico-item {
-            flex-basis: 30%; /* Cada item ocupa 30% do espaço */
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s ease-in-out;
-            }
+.servico-item {
+    width: calc(33.33% - 20px); /* Para manter os serviços lado a lado */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
 
-            .servico-item:hover {
-            transform: translateY(-5px); /* Efeito de hover */
-            }
+.servico-item:hover {
+    transform: translateY(-5px);
+}
 
-            .servico-imagem {
-            width: 100%;
-            max-height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 10px; /* Espaço entre imagem e título */
-            }
+.servico-imagem {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
 
-            .servico-item h3 {
-            font-size: 1.6em;
-            margin-bottom: 10px;
-            }
+.servico-item h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
 
-            .servico-item p {
-            font-size: 1.2em;
-            color: #555;
-            }
+.servico-item p {
+    font-size: 1.2em;
+    color: #555;
+}
 
-            /* Responsividade */
-            @media screen and (max-width: 768px) {
-            .servico-item {
-            flex-basis: 45%; /* Ajuste para telas menores */
-            }
-            }
+/* Responsividade */
+@media screen and (max-width: 900px) {
+    .servico-item {
+        width: calc(50% - 20px); /* Em telas menores, exibir dois por linha */
+    }
+}
 
-            @media screen and (max-width: 480px) {
-            .servico-item {
-             flex-basis: 100%; /* Fica 100% em telas muito pequenas */
-            }
-        }
+@media screen and (max-width: 600px) {
+    .servico-item {
+        width: 100%; /* Em telas muito pequenas, exibir um por linha */
+    }
+}
                 
     </style>
 </head>
