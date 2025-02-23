@@ -7,141 +7,124 @@
     <meta name="keywords" content="Assistência técnica, informática, manutenção de computador, formatação, Joinville">
     <title>Assistência Técnica de Informática - Joinville</title>
     
-    <!-- Adicionando o CSS diretamente no HTML -->
     <style>
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
-
-        /* Header */
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-        }
-
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-
-        header nav ul {
-            list-style: none;
-        }
-
-        header nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        header nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Hero Section */
-        .hero {
-            background-image: url('fundo.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-
-        .cta-button {
-            background-color: #f04e23;
-            color: white;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .cta-button:hover {
-            background-color: #d03e1a;
-        }
-
-        /* Serviços Section */
-        #servicos {
-            background-image: url('fundo-cabecalho.jpg');
-            background-color: white;
-            padding: 50px 20px;
-        }
-
-        #servicos h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 2.5em;
-        }
-
-        .servico-lista {
-            background-image: url('fundo.jpg');
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .servico-item {
-            text-align: center;
-            padding: 20px;
-            background-color: #e9e9e9;
-            width: 30%;
-            border-radius: 10px;
-        }
-
-        .servico-item h3 {
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .servico-item p {
-            font-size: 1.1em;
-        }
-
-        /* Bairros Atendidos Section */
-        #Bairros\ Atendidos {
-        background-color: #f9f9f9;
-        padding: 50px 20px;
-        text-align: center; /* Centralizando o conteúdo */
+    /* Resetando margens e preenchimentos de todos os elementos */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
-    #Bairros\ Atendidos h2 {
-        font-size: 2.5em;
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+    }
+
+    /* Header */
+    header {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        flex-wrap: wrap; /* Para permitir que o conteúdo se ajuste nas telas menores */
+    }
+
+    header nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
+    }
+
+    header nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero {
+        background-image: url('fundo.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .cta-button {
+        background-color: #f04e23;
+        color: white;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .cta-button:hover {
+        background-color: #d03e1a;
+    }
+
+    /* Seção de Serviços */
+    #servicos {
+        background-color: white;
+        padding: 50px 20px;
+    }
+
+    #servicos h2 {
+        text-align: center;
         margin-bottom: 40px;
-        font-family: 'Arial', sans-serif; /* Garantindo a mesma fonte usada nas outras seções */
+        font-size: 2.5em;
+    }
+
+    .servico-lista {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; /* Permite que os itens se ajustem no celular */
+    }
+
+    .servico-item {
+        text-align: center;
+        padding: 20px;
+        background-color: #e9e9e9;
+        width: 30%;
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+
+    .servico-item h3 {
+        margin-bottom: 15px;
         color: #333;
     }
 
-    #Bairros\ Atendidos p {
-        font-size: 1.2em;
-        color: #555;
-        margin: 5px 0;
+    .servico-item p {
+        font-size: 1.1em;
     }
 
-       #precos {
-        background-color: #ffffff;
+    /* Seção de Preços */
+    #precos {
+        background-color: white;
         padding: 50px 20px;
     }
 
@@ -149,8 +132,6 @@
         text-align: center;
         margin-bottom: 40px;
         font-size: 2.5em;
-        font-family: 'Arial', sans-serif; /* Fonte consistente */
-        color: #333;
     }
 
     #precos table {
@@ -161,7 +142,7 @@
 
     #precos th, #precos td {
         padding: 12px;
-        text-align: center; /* Centralizando os textos dentro da tabela */
+        text-align: center;
         border: 1px solid #ddd;
     }
 
@@ -174,18 +155,80 @@
         background-color: #e9e9e9;
     }
 
-    #precos tr:nth-child(even) td {
-        background-color: #f2f2f2; /* Alternando as cores das linhas para dar um efeito clean */
+    /* Responsividade para dispositivos móveis */
+    @media screen and (max-width: 768px) {
+        /* Reduzindo o tamanho das fontes e ajustando o layout */
+        .hero h2 {
+            font-size: 2.5em;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        .cta-button {
+            padding: 12px 24px;
+            font-size: 1.1em;
+        }
+
+        header nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header nav ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Ajustando a lista de serviços */
+        .servico-lista {
+            display: block;
+        }
+
+        .servico-item {
+            width: 100%; /* Deixando os itens ocuparem toda a largura */
+            margin: 10px 0;
+        }
+
+        #precos table {
+            width: 100%;
+            font-size: 14px;
+        }
+
+        #precos th, #precos td {
+            padding: 10px;
+        }
     }
 
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
+    @media screen and (max-width: 480px) {
+        /* Ajuste de fontes para telas muito pequenas */
+        .hero h2 {
+            font-size: 2em;
         }
-    </style>
+
+        .hero p {
+            font-size: 1em;
+        }
+
+        .cta-button {
+            padding: 10px 20px;
+            font-size: 1em;
+        }
+
+        #servicos h2, #precos h2 {
+            font-size: 2em;
+        }
+
+        .servico-item {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        #precos table {
+            font-size: 12px;
+        }
+    }
+</style>
 </head>
 <body>
 
