@@ -8,264 +8,149 @@
     <title>Assistência Técnica de Informática - Joinville</title>
     
     <style>
-    /* Resetando margens e preenchimentos de todos os elementos */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        background-color: #f4f4f4;
-    }
-
-    /* Header */
-    header {
-        background-color: #333;
-        color: white;
-        padding: 10px 0;
-    }
-
-    header .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 20px;
-        flex-wrap: wrap; /* Para permitir que o conteúdo se ajuste nas telas menores */
-        justify-content: space-between;
-    }
-
-    header nav ul {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
-    }
-
-    header nav ul li {
-        display: inline;
-        margin-right: 20px;
-    }
-
-    header nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    /* Hero Section */
-    .hero {
-        background-image: url('fundo-cabecalho1.png');
-        background-size: cover;
-        background-position: center;
-        color: white;
-        padding: 160px 20px;
-        text-align: center;
-    }
- .hero-text {
-        max-width: 50%; /* Limita o texto para ocupar metade do espaço */
-    }
-    .hero h2 {
-        font-size: 3em;
-        margin-bottom: 20px;
-    }
-
-    .hero p {
-        font-size: 1.5em;
-        margin-bottom: 20px;
-    }
-
-    .cta-button {
-    background-color: #007bff; /* Azul */
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.cta-button:hover {
-    background-color: #0056b3; /* Azul mais escuro no hover */
-}
-
-    /* Seção de Serviços */
-    #servicos {
-        background-color: white;
-        padding: 50px 20px;
-    }
-
-    #servicos h2 {
-        text-align: center;
-        margin-bottom: 40px;
-        font-size: 2.5em;
-    }
-
-    .servico-lista {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap; /* Permite que os itens se ajustem no celular */
-    }
-
-    .servico-item {
-        text-align: center;
-        padding: 20px;
-        background-color: #e9e9e9;
-        width: 30%;
-        border-radius: 10px;
-        margin: 10px 0;
-    }
-
-    .servico-item h3 {
-        margin-bottom: 15px;
-        color: #333;
-    }
-
-    .servico-item p {
-        font-size: 1.1em;
-    }
-
-    /* Seção de Preços */
-    #precos {
-        background-color: white;
-        padding: 50px 20px;
-    }
-
-    #precos h2 {
-        text-align: center;
-        margin-bottom: 40px;
-        font-size: 2.5em;
-    }
-
-    #precos table {
-        width: 100%;
-        margin-top: 30px;
-        border-collapse: collapse;
-    }
-
-    #precos th, #precos td {
-        padding: 12px;
-        text-align: center;
-        border: 1px solid #ddd;
-    }
-
-    #precos th {
-        background-color: #f04e23;
-        color: white;
-    }
-
-    #precos td {
-        background-color: #e9e9e9;
-    }
-
-    /* Responsividade para dispositivos móveis */
-    @media screen and (max-width: 768px) {
-        /* Reduzindo o tamanho das fontes e ajustando o layout */
-        .hero h2 {
-            font-size: 2.5em;
+        /* Resetando margens e preenchimentos de todos os elementos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .hero p {
-            font-size: 1.2em;
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
         }
 
-        .cta-button {
-            padding: 12px 24px;
-            font-size: 1.1em;
+        /* Cabeçalho */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
         }
 
-        header nav ul {
-            flex-direction: column;
+        header .container {
+            display: flex;
+            justify-content: space-between;
             align-items: center;
         }
 
+        header .logo img {
+            width: 120px; /* Ajuste o tamanho do logo */
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
         header nav ul li {
-            margin-bottom: 10px;
+            margin-left: 20px;
         }
 
-        /* Ajustando a lista de serviços */
-        .servico-lista {
-            display: block;
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
         }
 
-        .servico-item {
-            width: 100%; /* Deixando os itens ocuparem toda a largura */
-            margin: 10px 0;
+        /* Hero Section */
+        .hero {
+            background-image: url('fundo-cabecalho1.png'); /* Coloque sua imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 20px;
+            text-align: left; /* Texto alinhado à esquerda */
         }
 
-        #precos table {
-            width: 100%;
-            font-size: 14px;
+        .hero .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row-reverse; /* Imagem à direita */
         }
 
-        #precos th, #precos td {
-            padding: 10px;
+        .hero .container .texto {
+            max-width: 50%;
         }
-    }
 
-    @media screen and (max-width: 480px) {
-        /* Ajuste de fontes para telas muito pequenas */
         .hero h2 {
-            font-size: 2em;
+            font-size: 3em;
+            margin-bottom: 20px;
         }
 
         .hero p {
-            font-size: 1em;
+            font-size: 1.5em;
+            margin-bottom: 20px;
         }
 
         .cta-button {
-            padding: 10px 20px;
-            font-size: 1em;
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
         }
 
-        #servicos h2, #precos h2 {
-            font-size: 2em;
+        .cta-button:hover {
+            background-color: #0056b3;
         }
 
-        .servico-item {
-            width: 100%;
-            margin: 10px 0;
-        }
+        /* Responsividade para dispositivos móveis */
+        @media screen and (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                text-align: center;
+            }
 
-        #precos table {
-            font-size: 12px;
+            .hero .container {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .hero h2 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            .cta-button {
+                padding: 12px 24px;
+                font-size: 1.1em;
+            }
         }
-        
-        .logo.png img {
-    width: 60px; /* Ajuste conforme necessário */
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    }
-        
-</style>
+    </style>
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Cabeçalho -->
     <header>
         <div class="container">
             <div class="logo">
-    <img src="logo.png" alt="Logo Assistência Técnica do Kevin">
+                <img src="logo.png" alt="Logo Assistência Técnica do Kevin">
             </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#Bairros Atendidos">Bairros Atendidos</a></li>
-                    <li><a href="#Preços">Preços</a></li>
+                    <li><a href="#bairros">Bairros Atendidos</a></li>
+                    <li><a href="#precos">Preços</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="container">
-            <h2>Bem Vindo/a! Sou Técnico de Informática em Joinville!</h2>
-            <p>Formatação, Instalação do Windows 10 e 7, Pacote Office e Instalação de Programas. A melhor solução para o seu PC!</p>
-            <a href="https://wa.link/4xjrhj" class="cta-button">Clique aqui para falar comigo no WhatsApp!</a>
+            <div class="texto">
+                <h2>Bem Vindo! Sou Técnico de Informática em Joinville!</h2>
+                <p>Formatação, Instalação do Windows 10, Pacote Office, e muito mais! A melhor solução para o seu PC!</p>
+                <a href="https://wa.link/4xjrhj" class="cta-button">Clique aqui para falar comigo no WhatsApp!</a>
+            </div>
         </div>
     </section>
 
