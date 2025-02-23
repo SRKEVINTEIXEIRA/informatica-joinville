@@ -23,7 +23,7 @@
 
         /* Cabeçalho */
         header {
-            background-color: #000080;  /* Cor de fundo azul marinho*/
+            background-color: #1A1A66;  /* Cor de fundo azul */
             color: white;
             padding: 10px 20px;
         }
@@ -105,11 +105,11 @@
             background-color: #0056b3;
         }
 
-        /* Responsividade para dispositivos móveis */
-        @media screen and (max-width: 768px) {
+            /* Responsividade para dispositivos móveis */
+            @media screen and (max-width: 768px) {
             header .container {
-                flex-direction: column;
-                text-align: center;
+            flex-direction: column;
+            text-align: center;
             }
 
             .hero .container {
@@ -129,7 +129,59 @@
                 padding: 12px 24px;
                 font-size: 1.1em;
             }
+            
+            .servico-lista {
+            display: flex;
+            flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+            justify-content: space-between;
+            gap: 20px; /* Espaçamento mínimo entre os itens */
+            }
+
+            .servico-item {
+            flex-basis: 30%; /* Cada item ocupa 30% do espaço */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            }
+
+            .servico-item:hover {
+            transform: translateY(-5px); /* Efeito de hover */
+            }
+
+            .servico-imagem {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px; /* Espaço entre imagem e título */
+            }
+
+            .servico-item h3 {
+            font-size: 1.6em;
+            margin-bottom: 10px;
+            }
+
+            .servico-item p {
+            font-size: 1.2em;
+            color: #555;
+            }
+
+            /* Responsividade */
+            @media screen and (max-width: 768px) {
+            .servico-item {
+            flex-basis: 45%; /* Ajuste para telas menores */
+            }
+            }
+
+            @media screen and (max-width: 480px) {
+            .servico-item {
+             flex-basis: 100%; /* Fica 100% em telas muito pequenas */
+            }
         }
+                
     </style>
 </head>
 <body>
@@ -172,22 +224,27 @@
             <h2>Serviços</h2>
             <div class="servico-lista">
                 <div class="servico-item">
+                    <img src="imagem_servico1.jpg" alt="Serviço 1" class="servico-imagem">
                     <h3>Instalação de Windows 10 e 7</h3>
                     <p>Instalação do Sistema para seu computador.</p>
                 </div>
                 <div class="servico-item">
+                    <img src="imagem_servico1.jpg" alt="Serviço 2" class="servico-imagem">
                     <h3>Instalação do Pacote Office</h3>
                     <p> Instalação do Word, Excel e Power Point no seu Computador.</p>
                 </div>
                 <div class="servico-item">
+                    <img src="imagem_servico1.jpg" alt="Serviço 3" class="servico-imagem">
                     <h3>Instalação de Programas em Geral</h3>
                     <p>Me diga o programa que deseja que instalo para você!.</p>
                 </div>
                 <div class="servico-item">
+                    <img src="imagem_servico1.jpg" alt="Serviço 4" class="servico-imagem">
                     <h3>Formatação de HD e SSD e Backup de Dados</h3>
                     <p>Formatar um HD ou SSD e salvar os arquivos deles.</p>
                 </div>
                 <div class="servico-item">
+                    <img src="imagem_servico1.jpg" alt="Serviço 5" class="servico-imagem">
                     <h3>Recuperação de Dados</h3>
                     <p>Tentativa de recuperação de dados do seu HD ou SSD que foram apagados!.</p>
                 </div>
