@@ -149,7 +149,8 @@ border-radius: 10px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 text-align: center;
 transition: transform 0.3s ease-in-out;
-width: 30%;
+width: 100%; /* Garante que ocupe o tamanho do item */
+max-width: 300px; /* Limita a largura máxima de cada item */
 border-radius: 10px;
 }
 
