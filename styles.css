@@ -152,6 +152,7 @@ transition: transform 0.3s ease-in-out;
 width: 100%; /* Garante que ocupe o tamanho do item */
 max-width: 300px; /* Limita a largura máxima de cada item */
 border-radius: 10px;
+overflow: hidden;
 }
 
 .servico-item:hover {
@@ -164,6 +165,7 @@ border-radius: 10px;
     object-fit: contain; /* Garante que a imagem não seja cortada */
     display: block; /* Remove espaçamentos extras */
     margin: 10px auto; /* Centraliza a imagem */
+    object-fit: contain;
 }
 
 .servico-item h3 {
