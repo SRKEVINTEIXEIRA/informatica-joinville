@@ -132,13 +132,13 @@
             
             .servico-lista {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permite que os itens se ajustem conforme necessário */
     justify-content: space-between;
-    gap: 20px;
+    gap: 20px; /* Espaçamento entre os itens */
 }
 
 .servico-item {
-    width: calc(33.33% - 20px); /* Para manter os serviços lado a lado */
+    flex-basis: calc(33.33% - 20px); /* Define três serviços por linha com espaçamento */
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -148,36 +148,39 @@
 }
 
 .servico-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Efeito de hover */
 }
 
+/* Ajustando o tamanho exato da imagem */
 .servico-imagem {
-    max-width: 140px;
-    height: auto;
+    width: 100%; /* Ajusta ao container */
+    max-width: 120px; /* Define um tamanho fixo adequado */
+    height: 120px; /* Mantém proporção */
+    object-fit: contain; /* Mantém a imagem dentro do tamanho sem cortes */
     border-radius: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Espaço entre a imagem e o título */
 }
 
 .servico-item h3 {
-    font-size: 1.6em;
+    font-size: 1.4em;
     margin-bottom: 10px;
 }
 
 .servico-item p {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #555;
 }
 
 /* Responsividade */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
     .servico-item {
-        width: calc(50% - 20px); /* Em telas menores, exibir dois por linha */
+        flex-basis: calc(50% - 20px); /* Em telas menores, exibe dois por linha */
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .servico-item {
-        width: 100%; /* Em telas muito pequenas, exibir um por linha */
+        flex-basis: 100%; /* Em telas muito pequenas, um por linha */
     }
 }
                 
