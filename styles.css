@@ -120,6 +120,7 @@
                 padding: 12px 24px;
                 font-size: 1.1em;
             }
+         }
 
 .serviços {
 background-image: url('fundo-cabecalho.jpg');
@@ -133,14 +134,14 @@ margin-bottom: 40px;
 font-size: 2.5em;
 }
 
-.servico-lista {
+.serviço-lista {
 display: flex;
 flex-wrap: wrap; /* Permite que os itens se ajustem conforme necessário */
 justify-content: space-around;
 gap: 20px; /* Espaçamento entre os itens */
 }
 
-.servico-item {
+.serviço-item {
 flex-basis: calc(33.33% - 20px); /* Define três serviços por linha com espaçamento */
 background-color: #fff;
 padding: 20px;
@@ -152,11 +153,11 @@ width: 30%;
 border-radius: 10px;
 }
 
-.servico-item:hover {
+.serviço-item:hover {
     transform: translateY(-5px); /* Efeito de hover */
 }
                 
-.servico-imagem {
+.serviço-imagem {
     width: 50px; /* Define um tamanho fixo menor */
     height: 50px; /* Mantém a altura fixa */
     object-fit: contain; /* Garante que a imagem não seja cortada */
@@ -164,25 +165,25 @@ border-radius: 10px;
     margin: 10px auto; /* Centraliza a imagem */
 }
 
-.servico-item h3 {
+.serviço-item h3 {
     font-size: 1.4em;
     margin-bottom: 10px;
 }
 
-.servico-item p {
+.serviço-item p {
     font-size: 1em;
     color: #555;
 }
 
 /* Responsividade */
 @media screen and (max-width: 768px) {
-    .servico-item {
+    .serviço-item {
         flex-basis: calc(50% - 20px); /* Em telas menores, exibe dois por linha */
     }
 }
 
 @media screen and (max-width: 480px) {
-    .servico-item {
+    .serviço-item {
         flex-basis: 100%; /* Em telas muito pequenas, um por linha */
     }
 }
@@ -195,6 +196,7 @@ border-radius: 10px;
     background-color: #f8f9fa; /* Fundo claro */
     border-radius: 10px;
     overflow: hidden;
+    display: block;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
@@ -219,7 +221,7 @@ tr:hover {
 }
 
 /* Espaçamento extra entre bairros e rodapé */
-#Bairros\ Atendidos {
+#Bairros Atendidos {
     margin-bottom: 50px; /* Aumenta o espaçamento */
 }
 
