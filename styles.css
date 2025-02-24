@@ -189,8 +189,8 @@
 
          /* Estilizando a Tabela */
 table {
-    width: 100%;
-    border-collapse: collapse;
+    width: 100% !important;
+    border-collapse: collapse !important;
     margin-top: 20px;
     background-color: #f8f9fa; /* Fundo claro */
     border-radius: 10px;
@@ -201,7 +201,7 @@ table {
 th, td {
     padding: 12px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd !important;
 }
 
 th {
