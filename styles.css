@@ -186,3 +186,40 @@
         flex-basis: 100%; /* Em telas muito pequenas, um por linha */
     }
 }
+
+         /* Estilizando a Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f8f9fa; /* Fundo claro */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #1A73E8; /* Azul Google */
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f8ff; /* Azul bem claro */
+}
+
+tr:hover {
+    background-color: #e0efff; /* Efeito hover mais intenso */
+}
+
+/* Espaçamento extra entre bairros e rodapé */
+#Bairros\ Atendidos {
+    margin-bottom: 50px; /* Aumenta o espaçamento */
+}
+
