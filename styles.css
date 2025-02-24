@@ -121,35 +121,35 @@
                 font-size: 1.1em;
             }
 
-                 .servicos {
-            background-image: url('fundo-cabecalho.jpg');
-            background-color: white;
-            padding: 50px 20px;
-        }
+.serviços {
+background-image: url('fundo-cabecalho.jpg');
+background-color: white;
+padding: 50px 20px;
+}
 
-                .servicos h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 2.5em;
-        }
+.serviços h2 {
+text-align: center;
+margin-bottom: 40px;
+font-size: 2.5em;
+}
 
-            .servico-lista {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os itens se ajustem conforme necessário */
-    justify-content: space-around;
-    gap: 20px; /* Espaçamento entre os itens */
+.servico-lista {
+display: flex;
+flex-wrap: wrap; /* Permite que os itens se ajustem conforme necessário */
+justify-content: space-around;
+gap: 20px; /* Espaçamento entre os itens */
 }
 
 .servico-item {
-    flex-basis: calc(33.33% - 20px); /* Define três serviços por linha com espaçamento */
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-    width: 30%;
-    border-radius: 10px;
+flex-basis: calc(33.33% - 20px); /* Define três serviços por linha com espaçamento */
+background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: center;
+transition: transform 0.3s ease-in-out;
+width: 30%;
+border-radius: 10px;
 }
 
 .servico-item:hover {
@@ -188,7 +188,7 @@
 }
 
          /* Estilizando a Tabela */
-table {
+.preços {
     width: 100% !important;
     border-collapse: collapse !important;
     margin-top: 20px;
