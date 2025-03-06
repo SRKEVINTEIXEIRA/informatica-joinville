@@ -160,8 +160,8 @@ overflow: hidden;
 }
                 
 .servico-imagem {
-    width: 500px; /* Define um tamanho fixo menor */
-    height: 500px; /* Mantém a altura fixa */
+    width: 250px; /* Define um tamanho fixo menor */
+    height: 250px; /* Mantém a altura fixa */
     object-fit: contain; /* Garante que a imagem não seja cortada */
     display: block; /* Remove espaçamentos extras */
     margin: 10px auto; /* Centraliza a imagem */
