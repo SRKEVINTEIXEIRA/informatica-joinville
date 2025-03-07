@@ -228,3 +228,32 @@ tr:hover {
     margin-bottom: 50px; /* Aumenta o espaçamento */
 }
 
+/* Estilo para o texto centralizado */
+.texto-central {
+    background-color: green; /* Caixa verde */
+    color: black; /* Texto preto */
+    padding: 10px 20px; /* Espaçamento dentro da caixa */
+    border-radius: 5px; /* Bordas arredondadas, se desejar */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito para destacar */
+    position: absolute; /* Posicionamento absoluto */
+    top: 50%; /* Alinha no meio verticalmente */
+    left: 50%; /* Alinha no meio horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza perfeitamente */
+    z-index: 10; /* Coloca o texto na frente de outros elementos */
+}
+
+/* Estilo para o item de menu 'Serviços' */
+.servicos-link {
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    letter-spacing: 2px; /* Espaçamento médio entre as letras */
+    color: black; /* Cor do texto (pode ser alterado conforme o design) */
+    text-shadow: 2px 2px 4px white; /* Sombra branca, com leve desfoque */
+    transition: all 0.3s ease; /* Transição suave para efeitos de hover */
+}
+
+.servicos-link:hover {
+    color: green; /* Altera a cor do texto ao passar o mouse */
+    text-shadow: 2px 2px 6px white; /* Intensifica a sombra ao passar o mouse */
+}
+
