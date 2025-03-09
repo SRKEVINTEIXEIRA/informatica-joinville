@@ -12,39 +12,82 @@
             background-color: #f4f4f4;
         }
 
-        /* Cabeçalho */
-        header {
-            background-color: #1A1A66;  /* Cor de fundo azul */
-            color: white;
-            padding: 10px 20px;
-        }
+        /* Resetando margens e preenchimentos de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+/* Cabeçalho */
+header {
+    background-color: #1A1A66; /* Cor de fundo azul */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Alinha logo, menu e WhatsApp */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que o conteúdo quebre quando necessário */
+}
 
-        header .logo img {
-            width: 120px; /* Ajuste o tamanho do logo */
-            border-radius: 50%; /* Deixa a imagem redonda */
-            object-fit: cover; /* Garante que a imagem se encaixe corretamente */
-        }
+header .logo img {
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
-        header nav ul {
-            list-style: none;
-            display: flex;
-        }
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto; /* Faz com que o menu de navegação se alinhe à direita */
+}
 
-        header nav ul li {
-            margin-left: 20px;
-        }
+header nav ul li {
+    margin-left: 20px;
+}
 
-        header nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo para o número do WhatsApp dentro do cabeçalho */
+header .whatsapp {
+    background-color: green; /* Fundo verde */
+    color: white; /* Texto branco */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 20px; /* Espaço entre o menu e o número */
+    display: flex;
+    align-items: center; /* Alinha o texto verticalmente */
+}
+
+header .whatsapp a {
+    color: white; /* Cor do texto */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header .whatsapp a:hover {
+    color: yellow; /* Muda a cor ao passar o mouse */
+}
+
+/* Responsividade para ajustar a posição em dispositivos móveis */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo {
+        margin-bottom: 10px; /* Dá um pouco de espaço entre o logo e os outros itens */
+    }
+
+    header .whatsapp {
+        margin-top: 10px; /* Adiciona margem superior para o número do WhatsApp */
+    }
+}
 
         /* Hero Section */
         .hero {
@@ -98,10 +141,6 @@
 
             /* Responsividade para dispositivos móveis */
             @media screen and (max-width: 768px) {
-            header .container {
-            flex-direction: column;
-            text-align: center;
-            }
 
             .hero .container {
                 flex-direction: column-reverse;
