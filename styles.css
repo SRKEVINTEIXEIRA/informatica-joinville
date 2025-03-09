@@ -296,3 +296,14 @@ tr:hover {
     text-shadow: 2px 2px 6px white; /* Intensifica a sombra ao passar o mouse */
 }
 
+/* Centralizando e aumentando a fonte do título 'Servicos' */
+.servicos-link {
+    text-align: center; /* Centraliza o texto */
+    font-size: 3em; /* Aumenta o tamanho da fonte */
+    margin-bottom: 40px; /* Adiciona um espaçamento embaixo */
+}
+
+/* Aumentando o espaçamento entre o cabeçalho e a seção 'Bairros Atendidos' */
+#Servicos {
+    margin-bottom: 100px; /* Aumenta o espaçamento entre a seção de 'Servicos' e a próxima */
+}
