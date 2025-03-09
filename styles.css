@@ -234,7 +234,8 @@ overflow: hidden;
 .precos {
     width: 100% !important;
     border-collapse: collapse !important;
-    margin-top: 20px;
+    margin: 0 auto; /* Centraliza a tabela horizontalmente */
+    text-align: center; /* Centraliza o texto dentro das células da tabela */
     background-color: #f8f9fa; /* Fundo claro */
     border-radius: 10px;
     overflow: hidden;
@@ -245,6 +246,7 @@ overflow: hidden;
 th, td {
     padding: 12px;
     text-align: left;
+    border: 1px solid #ddd; /* Adiciona uma borda suave */
     border-bottom: 1px solid #ddd !important;
 }
 
@@ -252,6 +254,10 @@ th {
     background-color: #1A73E8; /* Azul Google */
     color: white;
     text-transform: uppercase;
+}
+
+thead {
+    background-color: #f2f2f2; /* Cor de fundo para o cabeçalho da tabela */
 }
 
 tr:nth-child(even) {
